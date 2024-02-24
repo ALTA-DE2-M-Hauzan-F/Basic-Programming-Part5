@@ -1,5 +1,10 @@
 def muncul_sekali(angka):
-    return []
+    ls1=[]
+    for a in angka:
+        if angka.count(a)==1:
+            # convert string count=1 menjadi int
+            ls1.append(int(a))            
+    return ls1
 
 if __name__ == '__main__':
     print(muncul_sekali("1234123")) # [4]

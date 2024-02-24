@@ -1,6 +1,11 @@
 def join_array_remove_duplicate(arrayA, arrayB):
     # your code here
-    return []
+    # remove duplicates from arrayA
+    newArray=list(dict.fromkeys(arrayA))
+    for b in arrayB:
+        if b not in newArray:
+            newArray.append(b)
+    return newArray
 
 if __name__ == '__main__':
     # Test cases
